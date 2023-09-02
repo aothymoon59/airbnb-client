@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 const MenuDropdown = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className='relative'>
-            <div className='flex flex-row items-center gap-1'>
+        <div className='relative xl:flex-1 xl:flex-shrink-0 xl:w-140'>
+            <div className='flex flex-row xl:justify-end items-center gap-1'>
                 {/* airbnb home btn  */}
                 <div className='hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer'>
                     Airbnb your home
@@ -30,7 +30,7 @@ const MenuDropdown = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className='absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm'>
+                <div className='absolute rounded-xl shadow-md w-[40vw] md:w-1/3 bg-white overflow-hidden right-0 top-12 text-sm'>
                     <div className='flex flex-col cursor-pointer'>
                         <Link
                             to='/login'
