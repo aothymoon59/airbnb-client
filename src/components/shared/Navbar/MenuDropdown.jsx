@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const MenuDropdown = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className='relative xl:flex-1 xl:flex-shrink-0 xl:w-140'>
+        <div className='relative hidden sm:block xl:flex-1 xl:flex-shrink-0 xl:w-140'>
             <div className='flex flex-row xl:justify-end items-center gap-1'>
                 {/* airbnb home btn  */}
                 <div className='hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer'>
